@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Formulir Pendaftaran Vaksinasi COVID-19</h2>
+
+    <h3>Salam Sehat</h3>
+    <p>
+      Demi menekan penyebaran virus COVID-19 di Nusantara, pemerintah
+      menggalakkan program vaksinasi COVID-19. Mari ikut serta dengan
+      mendaftarkan diri dan keluarga Anda dengan mengisi formulir di bawah ini:
+    </p>
+
+    <form action="/action_page.php">
+      <fieldset>
+        <legend>Data Umum:</legend>
+        <label for="fname">Nama Lengkap:</label><br />
+        <input type="text" id="fname" name="fname" /><br /><br />
+        <label for="lname">Nomor KTP:</label><br />
+        <input type="text" id="lname" name="lname" /><br /><br />
+        <label for="jk">Jenis Kelamin</label><br />
+        <input type="radio" id="l" name="jk" value="Laki-Laki" />
+        <label for="l">Laki-Laki</label>
+        <input type="radio" id="p" name="jk" value="Perempuan" />
+        <label for="p">Perempuan</label><br /><br />
+        <label for="tgllahir">Tanggal Lahir</label><br />
+        <input type="date" id="tgllahir" name="tgllahir" /><br /><br />
+        <label for="message">Alamat domisili:</label><br />
+        <textarea name="message" rows="10" cols="30"></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Riwayat Kesehatan</legend>
+        <label for="gejala"
+          >Apakah Anda mengalami gejala berikut ini dalam 1 bulan terakhir? </label
+        ><br />
+        <input type="checkbox" name="gejala" id="gejala1" value="batuk" />
+        <label for="gejala1">Batuk</label><br />
+        <input type="checkbox" name="gejala" id="gejala2" value="sesak nafas" />
+        <label for="gejala2">Sesak nafas</label><br />
+        <input
+          type="checkbox"
+          name="gejala"
+          id="gejala3"
+          value="gangguan jantung"
+        />
+        <label for="gejala3">Gangguan jantung</label><br />
+        <input type="checkbox" name="gejala" id="gejala4" value="diabetes" />
+        <label for="gejala4">Diabetes</label><br />
+        <input
+          type="checkbox"
+          name="gejala"
+          id="gejala5"
+          value="darah rendah/tinggi"
+        />
+        <label for="gejala5">Darah Rendah/tinggi</label><br />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Upload Foto KTP:</legend>
+        <input type="file" id="myfile" name="myfile" />
+      </fieldset>
+      <br />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>

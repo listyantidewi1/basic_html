@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <h1>Form Dengan Input Text, Submit, & Reset (dalam fieldset)</h1>
+
+    <form>
+      <fieldset>
+        <legend>Registrasi</legend>
+        <label for="fname">First Name:</label><br />
+        <input type="text" id="fname" name="fname" /><br />
+        <label for="lname">Last Name:</label><br />
+        <input type="text" id="lname" name="lname" /><br />
+        <input type="submit" id="submit" name="submit" />
+        <input type="reset" />
+      </fieldset>
+    </form>
+
+    <br />
+    <h1>Form Dengan Input Password</h1>
+    <form>
+      <label for="username">Username:</label><br />
+      <input type="text" id="username" name="username" /><br />
+      <label for="password">Password:</label><br />
+      <input type="password" id="password" name="password" />
+    </form>
+    <br />
+    <h1>Form Dengan Input Radio Button</h1>
+    <p>Pilihlah mata pelajaran favorit Anda:</p>
+    <form>
+      <input
+        type="radio"
+        id="BasisData"
+        name="MapelFavorit"
+        value="Basis Data"
+        disabled="true"
+      />
+      <label for="Basisdata">Basis Data</label><br />
+      <input type="radio" id="PBO" name="MapelFavorit" value="PBO" />
+      <label for="PBO">Pemrograman Berorientasi Obyek</label><br />
+      <input type="radio" id="PWDPB" name="MapelFavorit" value="PWDPB" />
+      <label for="PWDPB">Pemrograman Web dan Perangkat Bergerak</label>
+    </form>
+    <br />
+    <h1>Form Dengan Input Checkbox</h1>
+    <p>Pilihlah apa saja hobby Anda:</p>
+    <form>
+      <input
+        type="checkbox"
+        id="hobby1"
+        name="hobby"
+        value="Membaca"
+        checked="true"
+      />
+      <label for="hobby1">Membaca</label><br />
+      <input type="checkbox" id="hobby2" name="hobby" value="Berenang" />
+      <label for="hobby2">Berenang</label><br />
+      <input type="checkbox" id="hobby3" name="hobby" value="Memasak" />
+      <label for="hobby3">Memasak</label>
+    </form>
+    <br />
+    <h1>Input Button</h1>
+    <input
+      type="button"
+      onClick="alert('Terimakasih sudah klik saya!')"
+      value="Klik Saya!"
+    />
+    <br />
+    <h1>Input Type Color</h1>
+    <form>
+      <label for="favcolor">Pilih warna favoritmu</label>
+      <input type="color" id="favcolor" name="favcolor" />
+    </form>
+    <br />
+    <h1>Input Tanggal / Date & Datetime-local</h1>
+    <form>
+      <label for="ultah">Ulang Tahun</label>
+      <input type="date" id="ultah" name="ultah" /><br />
+      <label for="bdaytime">Ulang Tahun (Hari dan Jam)</label>
+      <input type="datetime-local" id="jamUltah" name="jamUltah" />
+    </form>
+    <br />
+    <h1>Input Email</h1>
+    <form>
+      <label for="email">Masukan email Anda:</label>
+      <input type="email" id="email" name="email" />
+      <br />
+      <input type="submit" value="Submit" name="submit" id="submit" />
+    </form>
+    <br />
+    <h1>Input File</h1>
+    <form>
+      <label for="myfile">Pilih file:</label>
+      <input type="file" id="myfile" name="myfile" />
+    </form>
+    <br />
+    <h1>Input Hidden</h1>
+    <form>
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname" /><br />
+      <input type="hidden" id="custId" name="custId" value="1234" />
+      <input type="submit" value="submit" />
+    </form>
+    <br />
+    <h1>Input Month / Bulan</h1>
+    <form>
+      <label for="bdaymonth">Birthday (month & year)</label>
+      <input type="month" id="bdaymonth" name="bdaymonth" />
+    </form>
+    <br />
+    <h1>Input Angka / Number</h1>
+    <form>
+      <label for="jumlah">Jumlah (1-100)</label>
+      <input type="number" id="jumlah" name="jumlah" min="1" max="100" />
+    </form>
+    <br />
+    <h1>Input Range</h1>
+    <form>
+      <label for="vol">Volume (0-50)</label>
+      <input type="range" id="vol" name="vol" min="0" max="50" />
+    </form>
+    <br />
+    <h1>Input Search/pencarian</h1>
+    <form>
+      <label for="cari">Cari di Google</label>
+      <input type="search" id="cari" name="cari" />
+    </form>
+    <br />
+    <h1>Input Tel (telephone number)</h1>
+    <form>
+      <label for="telp">Masukkan nomor telepon Anda:</label>
+      <input type="tel" id="telp" name="telp" pattern="[0-9]{4}-[0-9]{6}" />
+    </form>
+  </body>
+</html>
